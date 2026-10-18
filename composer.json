@@ -1,0 +1,17 @@
+{
+  "name": "pr3slaff/psst",
+  "description": "Deliberate, fail-silent Laravel events and authenticated health metrics.",
+  "keywords": ["laravel", "alerts", "notifications", "health", "metrics"],
+  "homepage": "https://github.com/pr3slaff/psst",
+  "type": "library",
+  "license": "MIT",
+  "authors": [{"name": "pr3slaff", "homepage": "https://github.com/pr3slaff"}],
+  "support": {"issues": "https://github.com/pr3slaff/psst/issues", "source": "https://github.com/pr3slaff/psst"},
+  "require": {"php": "^8.3", "illuminate/support": "^12.0|^13.0", "illuminate/http": "^12.0|^13.0", "illuminate/queue": "^12.0|^13.0", "illuminate/database": "^12.0|^13.0"},
+  "require-dev": {"orchestra/testbench": "^10.0|^11.0", "phpunit/phpunit": "^11.5|^12.0"},
+  "autoload": {"psr-4": {"Pr3slaff\\Psst\\": "src/"}},
+  "autoload-dev": {"psr-4": {"Pr3slaff\\Psst\\Tests\\": "tests/"}},
+  "extra": {"laravel": {"providers": ["Pr3slaff\\Psst\\PsstServiceProvider"], "aliases": {"Psst": "Pr3slaff\\Psst\\Facades\\Psst"}}},
+  "scripts": {"test": "phpunit"},
+  "config": {"sort-packages": true}
+}
